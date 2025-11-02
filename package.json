@@ -1,5 +1,6 @@
 {
   "name": "rawdah",
+  "homepage": "https://qiyamtime.github.io/qiyamtime",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.16",
@@ -17,6 +20,7 @@
     "csv": "^6.4.1",
     "d3-geo": "^3.1.1",
     "date-fns": "^4.1.0",
+    "gh-pages": "^6.3.0",
     "npm": "^11.6.2",
     "prop-types": "^15.8.1",
     "react": "^19.1.1",
@@ -25,7 +29,8 @@
     "react-paginate": "^8.3.0",
     "react-simple-maps": "^3.0.0",
     "react-virtuoso": "^4.14.1",
-    "tailwindcss": "^4.1.16"
+    "tailwindcss": "^4.1.16",
+    "yarn": "^1.22.22"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
