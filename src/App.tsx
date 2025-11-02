@@ -104,7 +104,7 @@ function App() {
                   <button
                     className="btn btn-link m-0 pb-2"
                     popoverTarget="rdp-popover"
-                    onClick={() => setDropdown(!dropdown)}
+                    onClick={() => setDropdown(true)}
                     style={{ anchorName: "--rdp" } as React.CSSProperties}
                   >
                     Change date
@@ -126,6 +126,7 @@ function App() {
                             setDate(newDate);
                             popoverRef.current?.hidePopover();
                           }
+                          setDropdown(false);
                         }}
                       />
                     </div>
