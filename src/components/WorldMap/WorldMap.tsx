@@ -42,7 +42,7 @@ export const WorldMap: React.FC<WorldMapProps> = ({ ref }) => {
   });
   const [mapControls, setMapControls] = useState<MapControls>({
     center: DEFAULT_MAP_CENTER,
-    zoom: DEFAULT_ZOOM,
+    zoom: 1,
   });
   const [hoverCity, setHoverCity] = useState<CityRecord>();
   const [search, setSearch] = useState<string>();
