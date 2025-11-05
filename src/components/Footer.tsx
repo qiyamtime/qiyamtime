@@ -9,6 +9,10 @@ export const Footer: React.FC = () => {
         rel="noopener noreferrer"
         className="flex items-center space-x-2 hover:opacity-80"
       >
+        <div className="text-xs">
+          May Allah accept your prayers. This page is intended as a convenience;
+          always follow your local mosque or community guidance when in doubt.
+        </div>
         <img
           src={GitHubIcon}
           alt="GitHub"
