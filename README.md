@@ -37,5 +37,6 @@ The page works in any modern desktop or mobile browser (Chrome, Edge, Firefox, S
 If you spot an issue (timing, formatting, or accessibility), consider opening an issue on the project’s repository (if one is linked) or contacting the page owner.
 
 ## Acknowledgments
+This page uses the [Aladhan API](https://aladhan.com/prayer-times-api) for it's prayer times and wouldn't be possible to make this project without it. May Allah reward those who worked on this API
 
 May Allah accept your prayers. This page is intended as a convenience; always follow your local mosque or community guidance when in doubt.
