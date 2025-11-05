@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# Qiyam & Prayer Times
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web page that helps you see today’s Islamic prayer times along with the late-night **Qiyam (last third of the night)** window.
 
-Currently, two official plugins are available:
+🔗 **Live site:** https://qiyamtimes.github.io/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## What it shows
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Daily salah times** — Fajr, Dhuhr, ‘Asr, Maghrib, and ‘Isha.
+- **Qiyam window** — the last third of the night, often recommended for night prayer.
+  - _Typical definition:_  
+    - **Night length** = time from **Maghrib** to **Fajr**  
+    - **Qiyam start** ≈ Maghrib + (2/3 × night length)  
+    - **Qiyam end** = Fajr
 
-## Expanding the ESLint configuration
+> Note: Exact calculations and methods can vary by convention; this page presents a straightforward, at-a-glance view.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Accuracy & methods
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Prayer time calculations depend on:
+- Your **location** (latitude/longitude)
+- The **prayer calculation method** (e.g. Moonsighting Committe, Umm Al-Quara Universtiy, Makkah)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Privacy
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- The page is hosted on **GitHub Pages**.  
+- There is no login and no obvious data entry required nor prompt for location
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Browser support
+
+The page works in any modern desktop or mobile browser (Chrome, Edge, Firefox, Safari). If something doesn’t load:
+- Hard-refresh the page
+- Try disabling aggressive content blockers for this site
+- Try another browser
+
+---
+
+## Feedback
+
+If you spot an issue (timing, formatting, or accessibility), consider opening an issue on the project’s repository (if one is linked) or contacting the page owner.
+
+---
+
+## Acknowledgments
+
+May Allah accept your prayers. This page is intended as a convenience; always follow your local mosque or community guidance when in doubt.
