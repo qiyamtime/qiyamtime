@@ -10,6 +10,7 @@ import { NightCalculations } from "./components/NightCalculations/NightCalulcati
 import { fetchPrayerTimes } from "./data/fetchPrayerTimes";
 import { DayPicker } from "react-day-picker";
 import { SettingButton } from "./components/Settings/SettingButton";
+import { Footer } from "./components/Footer";
 
 function App() {
   const worldMapDialogRef = useRef<HTMLDialogElement>(null);
@@ -166,6 +167,7 @@ function App() {
           fajr={data?.nextDayFajr}
           maghrib={data?.response.timings.Maghrib}
         />
+        <Footer />
       </div>
     </div>
   );
